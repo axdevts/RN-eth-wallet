@@ -1,0 +1,29 @@
+[
+  {
+    "expectedConvertQuote": "1.683355929786874381",
+    "routePathArrayTokenMap": [
+      {
+        "chainId": 4,
+        "contractAddress": "NO_CONTRACT_ADDRESS",
+        "decimals": 18,
+        "symbol": "ETH",
+        "name": "Ethers"
+      },
+      {
+        "chainId": 4,
+        "contractAddress": "0x6e894660985207feb7cf89Faf048998c71E8EE89",
+        "symbol": "REP",
+        "decimals": 18,
+        "name": "Augur"
+      }
+    ],
+    "routeText": "ETH > REP",
+    "routePathArray": [
+      "0xc778417E063141139Fce010982780140Aa0cD5Ab",
+      "0x6e894660985207feb7cf89Faf048998c71E8EE89"
+    ],
+    "uniswapVersion": "v2",
+    "liquidityProviderFee": 0.003,
+    "quoteDirection": "input"
+  }
+]

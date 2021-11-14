@@ -1,0 +1,8 @@
+{
+  "address": "0xD9BA894E0097f8cC2BBc9D24D308b98e36dc6D02",
+  "chainId": 4,
+  "decimals": 6,
+  "logoURI": "https://raw.githubusercontent.com/compound-finance/token-list/master/assets/asset_USDT.svg",
+  "name": "Tether USD",
+  "symbol": "USDT"
+}

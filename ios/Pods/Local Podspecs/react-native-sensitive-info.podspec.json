@@ -1,0 +1,26 @@
+{
+  "name": "react-native-sensitive-info",
+  "version": "5.5.8",
+  "summary": "react-native-sensitive-info manages all data stored in Android Shared Preferences and iOS Keychain. You can set, get and delete keys/values using simple methods.",
+  "license": "MIT",
+  "authors": {
+    "name": "mCodex & ClassApp",
+    "email": "mtw.andrade@gmail.com"
+  },
+  "homepage": "https://mcodex.dev/react-native-sensitive-info/",
+  "platforms": {
+    "ios": "8.0",
+    "tvos": "9.2",
+    "osx": "10.14"
+  },
+  "source": {
+    "git": "https://github.com/mCodex/react-native-sensitive-info",
+    "tag": "v5.5.8"
+  },
+  "source_files": "ios/**/*.{h,m}",
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}
