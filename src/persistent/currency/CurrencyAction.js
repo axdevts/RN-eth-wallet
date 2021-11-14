@@ -1,17 +1,17 @@
-import {CurrencyService} from './CurrencyService';
+import { CurrencyService } from './CurrencyService';
 import {
-    getCurrencySuccess,
+	getCurrencySuccess,
 } from './CurrencyReducer';
 
 
 export const CurrencyAction = {
-    getCurrency,
+	getCurrency,
 };
 
 function getCurrency(fiat) {
-    return async dispatch => {
-       const currency = await CurrencyService.getCurrency(fiat);
-       dispatch(getCurrencySuccess(currency));
-    };
+	return async dispatch => {
+		const currency = await CurrencyService.getCurrency(fiat);
+		dispatch(getCurrencySuccess(currency));
+	};
 }
 
