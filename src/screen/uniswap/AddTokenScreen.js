@@ -78,12 +78,13 @@ export default function AddTokenScreen({ navigation, lang }) {
 												}
 												setError('Save');
 											}
-										} else {
-											LMToast.popupError({
-												title: lang.error,
-												message: lang.tokenHasAlreadyBeenAdded,
-											})
 										}
+										// else {
+										//     LMToast.popupError({
+										//         title: lang.error,
+										//         message : lang.tokenHasAlreadyBeenAdded,
+										//     })
+										// }
 
 									}}
 								/>
