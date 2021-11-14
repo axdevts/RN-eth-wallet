@@ -9,7 +9,7 @@ export default function LMFlatList(props) {
 			data={data}
 			renderItem={renderItem}
 			initialNumToRender={10}
-			removeClippedSubviews={true}
+			// removeClippedSubviews={true}
 			showsHorizontalScrollIndicator={false}
 			showsVerticalScrollIndicator={false}
 			ListEmptyComponent={() => {
