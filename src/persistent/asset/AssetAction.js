@@ -23,7 +23,7 @@ function removeAsset(address, chainId, token) {
 }
 function list(address, chainId) {
 	return async dispatch => {
-		console.log('called here after transfer', address, chainId);
+		//console.log('called here after transfer', address, chainId);
 		const assets = await AssetService.list(address, chainId);
 		for (let i = 0; i < assets.length; i++) {
 			assets[i].balance = await UniswapModule.tokenBalance(address, assets[i].address, assets[i].decimals);

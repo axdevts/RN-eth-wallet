@@ -17,7 +17,7 @@ export default function TokenScreen({ navigation, lang, route }) {
 
 	}, []);
 	const renderItem = ({ item }) => {
-		console.log(item);
+		//console.log(item);
 		return (
 			<TouchableOpacity style={styles.item} onPress={async () => {
 				navigation.goBack();

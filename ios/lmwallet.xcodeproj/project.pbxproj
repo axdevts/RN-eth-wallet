@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0022D6BA7C0F49618CAFCD78 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DCE69CDA0584E2D87AFA6BF /* AntDesign.ttf */; };
 		00E356F31AD99517003FC87E /* lmwalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* lmwalletTests.m */; };
+		0452F5610B7546C4B1714C77 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFCC6B901E6E4B5EB666745A /* MaterialIcons.ttf */; };
+		05848685A89B4269B88E4F60 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 168698032E07435584AF66F8 /* Zocial.ttf */; };
+		061B4BDEF4644C89B35D72A2 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 997562072BAA4069BB611251 /* SimpleLineIcons.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		3515F7FF75344E07B9F11C00 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4CA09D80B9E4B0687E90F4A /* MaterialCommunityIcons.ttf */; };
+		4574A61041314C9D8F39D79F /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9496828645E468B91F0D224 /* Octicons.ttf */; };
 		62CF82140DB9DB33DC3E774A /* libPods-lmwallet-lmwalletTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 058F99079938DB47E26D4392 /* libPods-lmwallet-lmwalletTests.a */; };
+		677C45DEDD354A3983F1418E /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74D08830F70746889E18D5B9 /* Entypo.ttf */; };
+		6E19A5926B924D71963769B0 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4F5A81023D94054A5E6D949 /* Foundation.ttf */; };
 		7A3717408AD76E83A51225A6 /* libPods-lmwallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD8533194527AF4C5A51FF2 /* libPods-lmwallet.a */; };
+		81171C6861A64FF18F0283BE /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A738B798A8B64B6199B3FE1F /* Feather.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		824F96A5B20F44098464603E /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA6D03E85CB942DF9B34CA87 /* FontAwesome5_Regular.ttf */; };
+		A536DC7AFF234A72950F4582 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60F50B68B3AE438A9A287C93 /* FontAwesome5_Solid.ttf */; };
+		AB84DC4CFA8F46F2BED598FC /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C449C6CC815E4753A017212B /* FontAwesome5_Brands.ttf */; };
+		CB077676DB4644D7AE4612AB /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FD706BCD13849CDBE861888 /* FontAwesome.ttf */; };
+		CB95604610FF4249AAD5D5BB /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9DE9137E2F34C468387D35D /* Fontisto.ttf */; };
+		ED7B1DAABD724FAF8D1B9537 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A11EA71581424A9094723C4C /* EvilIcons.ttf */; };
+		F98E532C187C49BB89BE9D4B /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F36D58EC100A428380B02AEA /* Ionicons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,19 +47,35 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* lmwalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lmwalletTests.m; sourceTree = "<group>"; };
 		058F99079938DB47E26D4392 /* libPods-lmwallet-lmwalletTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lmwallet-lmwalletTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DCE69CDA0584E2D87AFA6BF /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* lmwallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lmwallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = lmwallet/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = lmwallet/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = lmwallet/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = lmwallet/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = lmwallet/main.m; sourceTree = "<group>"; };
+		168698032E07435584AF66F8 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		457588C77D0E4AF47D8593BC /* Pods-lmwallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lmwallet.debug.xcconfig"; path = "Target Support Files/Pods-lmwallet/Pods-lmwallet.debug.xcconfig"; sourceTree = "<group>"; };
 		60B53E1561E7FE76698689B9 /* Pods-lmwallet-lmwalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lmwallet-lmwalletTests.release.xcconfig"; path = "Target Support Files/Pods-lmwallet-lmwalletTests/Pods-lmwallet-lmwalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		60F50B68B3AE438A9A287C93 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		6FD706BCD13849CDBE861888 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		74D08830F70746889E18D5B9 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		80DFCEC036CB5E06D3B5288D /* Pods-lmwallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lmwallet.release.xcconfig"; path = "Target Support Files/Pods-lmwallet/Pods-lmwallet.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = lmwallet/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		997562072BAA4069BB611251 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		A11EA71581424A9094723C4C /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		A738B798A8B64B6199B3FE1F /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		B4CA09D80B9E4B0687E90F4A /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		B4F5A81023D94054A5E6D949 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		B9DE9137E2F34C468387D35D /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		BBD8533194527AF4C5A51FF2 /* libPods-lmwallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lmwallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4DB81BB2F68EFC7AC2A7BA /* Pods-lmwallet-lmwalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lmwallet-lmwalletTests.debug.xcconfig"; path = "Target Support Files/Pods-lmwallet-lmwalletTests/Pods-lmwallet-lmwalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C449C6CC815E4753A017212B /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		D9496828645E468B91F0D224 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		DFCC6B901E6E4B5EB666745A /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		EA6D03E85CB942DF9B34CA87 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F36D58EC100A428380B02AEA /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +136,6 @@
 				BF4DB81BB2F68EFC7AC2A7BA /* Pods-lmwallet-lmwalletTests.debug.xcconfig */,
 				60B53E1561E7FE76698689B9 /* Pods-lmwallet-lmwalletTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -134,6 +165,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				179693FECA78C240E6A083FE /* Pods */,
+				F29FB5CC6A7E486D95B8A8C2 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +179,29 @@
 				00E356EE1AD99517003FC87E /* lmwalletTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F29FB5CC6A7E486D95B8A8C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0DCE69CDA0584E2D87AFA6BF /* AntDesign.ttf */,
+				74D08830F70746889E18D5B9 /* Entypo.ttf */,
+				A11EA71581424A9094723C4C /* EvilIcons.ttf */,
+				A738B798A8B64B6199B3FE1F /* Feather.ttf */,
+				6FD706BCD13849CDBE861888 /* FontAwesome.ttf */,
+				C449C6CC815E4753A017212B /* FontAwesome5_Brands.ttf */,
+				EA6D03E85CB942DF9B34CA87 /* FontAwesome5_Regular.ttf */,
+				60F50B68B3AE438A9A287C93 /* FontAwesome5_Solid.ttf */,
+				B9DE9137E2F34C468387D35D /* Fontisto.ttf */,
+				B4F5A81023D94054A5E6D949 /* Foundation.ttf */,
+				F36D58EC100A428380B02AEA /* Ionicons.ttf */,
+				B4CA09D80B9E4B0687E90F4A /* MaterialCommunityIcons.ttf */,
+				DFCC6B901E6E4B5EB666745A /* MaterialIcons.ttf */,
+				D9496828645E468B91F0D224 /* Octicons.ttf */,
+				997562072BAA4069BB611251 /* SimpleLineIcons.ttf */,
+				168698032E07435584AF66F8 /* Zocial.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +298,22 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				0022D6BA7C0F49618CAFCD78 /* AntDesign.ttf in Resources */,
+				677C45DEDD354A3983F1418E /* Entypo.ttf in Resources */,
+				ED7B1DAABD724FAF8D1B9537 /* EvilIcons.ttf in Resources */,
+				81171C6861A64FF18F0283BE /* Feather.ttf in Resources */,
+				CB077676DB4644D7AE4612AB /* FontAwesome.ttf in Resources */,
+				AB84DC4CFA8F46F2BED598FC /* FontAwesome5_Brands.ttf in Resources */,
+				824F96A5B20F44098464603E /* FontAwesome5_Regular.ttf in Resources */,
+				A536DC7AFF234A72950F4582 /* FontAwesome5_Solid.ttf in Resources */,
+				CB95604610FF4249AAD5D5BB /* Fontisto.ttf in Resources */,
+				6E19A5926B924D71963769B0 /* Foundation.ttf in Resources */,
+				F98E532C187C49BB89BE9D4B /* Ionicons.ttf in Resources */,
+				3515F7FF75344E07B9F11C00 /* MaterialCommunityIcons.ttf in Resources */,
+				0452F5610B7546C4B1714C77 /* MaterialIcons.ttf in Resources */,
+				4574A61041314C9D8F39D79F /* Octicons.ttf in Resources */,
+				061B4BDEF4644C89B35D72A2 /* SimpleLineIcons.ttf in Resources */,
+				05848685A89B4269B88E4F60 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +383,6 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-lmwallet/Pods-lmwallet-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -449,6 +519,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44H4KL6M98;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = lmwallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,6 +546,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44H4KL6M98;
 				INFOPLIST_FILE = lmwallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -3,7 +3,6 @@ import { FlatList, Text, View } from 'react-native';
 
 export default function LMFlatList(props) {
 	const { data, renderItem } = props;
-	console.log('transaction history', data, renderItem)
 	return (
 		<FlatList
 			data={data}

@@ -43,16 +43,16 @@
   "script_phases": {
     "name": "Generate Specs",
     "input_files": [
-      "/Users/apple/Documents/Work/react-native/main/lmwallet/node_modules/react-native/scripts/../Libraries"
+      "/Users/mac/Documents/CMH/Wallet/nnn/rn-eth-wallet-dev_2/node_modules/react-native/scripts/../Libraries"
     ],
     "output_files": [
       "$(DERIVED_FILE_DIR)/codegen-FBReactNativeSpec.log",
-      "/Users/apple/Documents/Work/react-native/main/lmwallet/node_modules/react-native/scripts/../React/FBReactNativeSpec/FBReactNativeSpec/FBReactNativeSpec.h",
-      "/Users/apple/Documents/Work/react-native/main/lmwallet/node_modules/react-native/scripts/../React/FBReactNativeSpec/FBReactNativeSpec/FBReactNativeSpec-generated.mm"
+      "/Users/mac/Documents/CMH/Wallet/nnn/rn-eth-wallet-dev_2/node_modules/react-native/scripts/../React/FBReactNativeSpec/FBReactNativeSpec/FBReactNativeSpec.h",
+      "/Users/mac/Documents/CMH/Wallet/nnn/rn-eth-wallet-dev_2/node_modules/react-native/scripts/../React/FBReactNativeSpec/FBReactNativeSpec/FBReactNativeSpec-generated.mm"
     ],
-    "script": "set -o pipefail\n\nbash -l -c 'SRCS_DIR=/Users/apple/Documents/Work/react-native/main/lmwallet/node_modules/react-native/scripts/../Libraries CODEGEN_MODULES_OUTPUT_DIR=/Users/apple/Documents/Work/react-native/main/lmwallet/node_modules/react-native/scripts/../React/FBReactNativeSpec/FBReactNativeSpec CODEGEN_MODULES_LIBRARY_NAME=FBReactNativeSpec /Users/apple/Documents/Work/react-native/main/lmwallet/node_modules/react-native/scripts/generate-specs.sh' 2>&1 | tee \"${SCRIPT_OUTPUT_FILE_0}\"",
+    "script": "set -o pipefail\n\nbash -l -c 'SRCS_DIR=/Users/mac/Documents/CMH/Wallet/nnn/rn-eth-wallet-dev_2/node_modules/react-native/scripts/../Libraries CODEGEN_MODULES_OUTPUT_DIR=/Users/mac/Documents/CMH/Wallet/nnn/rn-eth-wallet-dev_2/node_modules/react-native/scripts/../React/FBReactNativeSpec/FBReactNativeSpec CODEGEN_MODULES_LIBRARY_NAME=FBReactNativeSpec /Users/mac/Documents/CMH/Wallet/nnn/rn-eth-wallet-dev_2/node_modules/react-native/scripts/generate-specs.sh' 2>&1 | tee \"${SCRIPT_OUTPUT_FILE_0}\"",
     "execution_position": "before_compile",
     "show_env_vars_in_log": true
   },
-  "prepare_command": "mkdir -p /Users/apple/Documents/Work/react-native/main/lmwallet/node_modules/react-native/scripts/../React/FBReactNativeSpec/FBReactNativeSpec && touch /Users/apple/Documents/Work/react-native/main/lmwallet/node_modules/react-native/scripts/../React/FBReactNativeSpec/FBReactNativeSpec/FBReactNativeSpec.h /Users/apple/Documents/Work/react-native/main/lmwallet/node_modules/react-native/scripts/../React/FBReactNativeSpec/FBReactNativeSpec/FBReactNativeSpec-generated.mm"
+  "prepare_command": "mkdir -p /Users/mac/Documents/CMH/Wallet/nnn/rn-eth-wallet-dev_2/node_modules/react-native/scripts/../React/FBReactNativeSpec/FBReactNativeSpec && touch /Users/mac/Documents/CMH/Wallet/nnn/rn-eth-wallet-dev_2/node_modules/react-native/scripts/../React/FBReactNativeSpec/FBReactNativeSpec/FBReactNativeSpec.h /Users/mac/Documents/CMH/Wallet/nnn/rn-eth-wallet-dev_2/node_modules/react-native/scripts/../React/FBReactNativeSpec/FBReactNativeSpec/FBReactNativeSpec-generated.mm"
 }

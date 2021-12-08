@@ -1,8 +1,10 @@
 import React from 'react';
 import { Image, SafeAreaView, StyleSheet, View } from 'react-native';
 import QRCodeScanner from 'react-native-qrcode-scanner';
+
 import { RNCamera } from 'react-native-camera';
-import { secondBackground } from '../../component/common/LMStyle';
+
+import { gray, grey, secondBackground } from '../../component/common/LMStyle';
 import LMBackButton from '../../component/common/LMBackButton';
 
 export default function ScannerScreen({ navigation, route }) {
@@ -13,6 +15,7 @@ export default function ScannerScreen({ navigation, route }) {
 			qrCodeAddress: e.data
 		});
 	};
+
 	return (
 		<SafeAreaView style={{ flex: 1, backgroundColor: secondBackground }}>
 			<View style={styles.header}>
@@ -21,9 +24,9 @@ export default function ScannerScreen({ navigation, route }) {
 				}} />
 				<Image source={require('../../../assets/logo_small.png')} style={styles.logo} resizeMode={'stretch'} />
 				<View style={{ width: 40 }}>
-
 				</View>
 			</View>
+			
 			<QRCodeScanner
 				onRead={onSuccess}
 				flashMode={RNCamera.Constants.FlashMode.auto}
@@ -64,4 +67,5 @@ const styles = StyleSheet.create({
 		width: 50,
 		height: 50,
 	},
+
 });

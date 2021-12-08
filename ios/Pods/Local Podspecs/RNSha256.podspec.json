@@ -2,11 +2,7 @@
   "name": "RNSha256",
   "version": "1.4.7",
   "summary": "Native sha256 react-native",
-  "authors": {
-    "name": "Hagen Huebel",
-    "email": "hhuebel@itinance.com",
-    "url": "hhuebel@itinance.com"
-  },
+  "authors": "Hagen Huebel <hhuebel@itinance.com> (hhuebel@itinance.com)",
   "homepage": "https://github.com/itinance/react-native-sha256",
   "license": "MIT",
   "platforms": {

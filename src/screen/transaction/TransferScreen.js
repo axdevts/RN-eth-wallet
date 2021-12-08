@@ -18,6 +18,8 @@ import LMCrypto from '../../component/common/LMCrypto';
 import LMFiat from '../../component/common/LMFiat';
 import _ from 'lodash';
 import LMToast from '../../component/common/LMToast';
+import LMDropdownList from '../../component/common/LMDropdownList';
+import { ContactAction } from '../../persistent/contact/ContactAction';
 
 yup.addMethod(yup.string, "isAddress", function (errorMessage) {
 	return this.test(`test-address`, errorMessage, function (value) {
@@ -48,12 +50,13 @@ export default function TransferScreen({ navigation, route, lang }) {
 	const [gasTracker, setGasTracker] = useState({});
 	const [selectedGas, setSelectedGas] = useState({});
 
+	const { contacts } = useSelector(state => state.ContactReducer);
 	useEffect(async () => {
 		const gasTracker = await WalletService.getFeeSuggestions(gasLimit);
 		setGasTracker(gasTracker);
 		setSelectedGas(gasTracker.proposeGasPrice);
+		dispatch(ContactAction.list());
 	}, [])
-
 	const onSubmit = async ({ recipientAddress, amount }) => {
 		const tx = {
 			to: recipientAddress,
@@ -61,6 +64,8 @@ export default function TransferScreen({ navigation, route, lang }) {
 			gasPrice: BigNumber.from(selectedGas.wei),
 			gasLimit: BigNumber.from(gasLimit)
 		}
+		//console.log(">>>>>> " + tx.to);
+
 		LMLoading.show();
 		dispatch(WalletAction.sendTransaction(rawActiveWallet, tx)).then(() => {
 			LMLoading.hide();
@@ -124,7 +129,7 @@ export default function TransferScreen({ navigation, route, lang }) {
 									value={value}
 									error={errors['senderBalance']}
 									placeholder={lang.yourBalance}
-									editable={false}
+									editable={true}
 								/>
 							)}
 							name="senderBalance"
@@ -134,7 +139,8 @@ export default function TransferScreen({ navigation, route, lang }) {
 					<View style={styles.block}>
 						<Controller
 							control={control}
-							render={({ onChange, onBlur, value }) => (
+							render={({ onChange, onBlur, value}) => (
+								qrCodeAddress.trim().length != 0?
 								<LMTextInput
 									label={lang.recipientAddress}
 									onBlur={onBlur}
@@ -143,9 +149,18 @@ export default function TransferScreen({ navigation, route, lang }) {
 									error={errors['recipientAddress']}
 									placeholder={lang.recipientAddress}
 								/>
+								: <LMDropdownList
+									label={lang.recipientAddress}
+									onSelect={(_value, index) => { onChange(_value.address); value = _value.address;}}
+									error={errors['recipientAddress']}
+									contacts={contacts}
+									defaultButtonText={lang.recipientAddress}
+									defaultValue=""
+									//disabled={qrCodeAddress.trim().length == 0? false : true}
+								/>
 							)}
 							name="recipientAddress"
-							defaultValue={qrCodeAddress}
+							defaultValue={qrCodeAddress.trim().length == 0 ? "" : (qrCodeAddress.indexOf('"') == -1)? qrCodeAddress.replace('ethereum:', ''): JSON.parse(qrCodeAddress).ethereum}
 						/>
 					</View>
 					<View style={styles.block}>
@@ -163,7 +178,8 @@ export default function TransferScreen({ navigation, route, lang }) {
 								/>
 							)}
 							name="amount"
-							defaultValue=""
+							defaultValue={qrCodeAddress.trim().length == 0 ? "" : (qrCodeAddress.indexOf('"') == -1)? "": JSON.parse(qrCodeAddress).amount.toString()}
+							// defaultValue={qrCodeAddress.trim().length == 0 ? "" : (qrCodeAddress.indexOf('"') == -1)? "": "0.000001"}
 						/>
 					</View>
 					<Text style={{ fontWeight: 'bold' }}>{lang.transactionFee}</Text>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, {useState, useEffect } from 'react';
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { darkBlue, defaultBackground, gray, green, primary, white } from '../../component/common/LMStyle';
 import { useDispatch, useSelector } from 'react-redux';
@@ -25,13 +25,32 @@ export default function MainScreen({ navigation, route }) {
 	const { activeWallet, wallets } = useSelector(state => state.WalletReducer);
 	const { activeNetwork } = useSelector(state => state.NetworkReducer);
 	const { assets } = useSelector(state => state.AssetReducer);
-	console.log(assets);
+	//console.log(assets);
 	const { language } = useSelector(state => state.LanguageReducer)
 
+	const [refreshInterval, setRefreshInterval] = useState(5000);
+	
+	const fetchMetrics = () => {
+		dispatch(WalletAction.setActiveWallet({
+			privateKey: activeWallet.privateKey,
+			name: activeWallet.name,
+			chainId: activeNetwork.chainId
+		}))
+		// .then(() => {
+		// 	console.log("Updated")
+		// });
+	}
 	useEffect(async () => {
 		dispatch(AssetAction.list(activeWallet.address, activeNetwork.chainId));
 		dispatch(TokenAction.getTokens({ chainId: activeNetwork.chainId }));
-	}, []);
+	}, []
+	);
+	useEffect(() => {
+		if (refreshInterval && refreshInterval > 0) {
+			const interval = setInterval(fetchMetrics, refreshInterval);
+			return () => clearInterval(interval);
+		}
+	}, [refreshInterval]);
 	const renderItem = ({ item }) => {
 		return (
 			<TouchableOpacity style={styles.item} onPress={() => {
@@ -89,6 +108,7 @@ export default function MainScreen({ navigation, route }) {
 								chainId: activeNetwork.chainId
 							})).then(() => {
 								LMLoading.hide();
+								console.log("DONE")
 							});
 						},
 						key: 'address',
@@ -118,7 +138,6 @@ export default function MainScreen({ navigation, route }) {
 											}}>
 											</View>
 										}
-
 									</View>
 								</>
 							);
